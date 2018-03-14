@@ -6,6 +6,7 @@ define puppet_device (
   Boolean                $debug        = false,
   Integer[0,1440]        $run_interval = 0,
   Boolean                $run_via_exec = false,
+  Boolean                $run_via_cron = false,
   Enum[present, absent]  $ensure       = present,
 ) {
 
